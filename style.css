@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 13px 5%;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+    position: fixed;
+    transition: all 0.6s ease;
+}
+.header.sticky{
+    padding: 5px 10%;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.logo img{
+    width: 100%;
+}
+.logo:hover{
+    scale: 0.9;
+}
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Asiatech';
+    padding: 10px;
+}
+.navbar .active,
+.navbar a:hover{
+    color:#006fbe ;
+    transition: all 0.6s ease;
+}
+#menu{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.slider{
+    position: relative;
+    width: 100%;
+}
+.myslide{
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+}
+.myslide >img{
+    width: 100%;
+    height: 100%;
+}
+.prev,
+.next{
+    position: absolute;
+    top: 50%;
+    color: aqua;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    font-size: 3rem;
+    transition: all 0.6s ease;
+}
+.next{
+    right: 0;
+}
+.next:hover,
+.prev:hover{
+    color: #006fbe;
+}
+.dotsbox{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+}
+.dot{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #006fbe;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+.dot.active, .dot:hover{
+    background-color: aqua;
+}
+
+.caption{
+    text-align: center;
+    margin-top: 3%;
+    font-family: IRANSansWeb;
+    margin-bottom: 5%;
+}
+.caption p{
+    font-size: .9rem;
+    margin-bottom: 2%;
+}
+.captionbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    justify-content: space-around;
+}
+.captionbox img{
+    max-width: 500px;
+}
+
+.captionbox ul{
+    text-align: center;
+    width: 40%;
+}
+.captionbox ul li{
+    margin: 20px 0;
+    color: #000;
+    
+    list-style: decimal
+}
+.captionbox a{
+    color: #000;
+}
+.captionbox ul button{
+    color: #006fbe;
+    background-color: transparent;
+    border:  2px solid #006fbe;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    border-radius: 5px;
+}
+.captionbox ul button:hover{
+    color: #000;
+    border-color: #000;
+    background-color: #006fbe;
+}
+
+.grow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 4% 0;
+    position: relative;
+}
+.grow .box{
+  width: 400px;
+   color:#000;
+   text-align: center;
+   height: 250px;
+   padding: 10px;
+   line-height: 50px;
+   font-weight: bold;
+   font-family: IRANSansWeb;
+   transition: all 0.6s ease;
+   line-height: 80px;
+   box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+border-radius: 5px;
+cursor: pointer;
+}
+.box:hover{
+    box-shadow:
+  3px 3.1px 5px rgba(0, 0, 0, 0.127),
+  7.5px 7.9px 12.7px rgba(0, 0, 0, 0.182),
+  15.2px 16.1px 25.9px rgba(0, 0, 0, 0.228),
+  31.4px 33.2px 53.3px rgba(0, 0, 0, 0.283),
+  86px 91px 146px rgba(0, 0, 0, 0.41)
+;
+}
+.footer{
+    background-color: darkslateblue;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    font-family: IRANSansWeb;
+    color: #fff;
+}
+.footer h1{
+    color: #fff;
+    padding-top: 20px;
+    font-size: 3.5rem;
+    font-family: IRANSansWeb;
+}
+.icon{
+    margin: 30px 0;
+}
+.icon a i{
+    color: #fff;
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50% !important;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.6s ease;
+}
+.icon a i:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+table{
+    font-family: Asiatech;
+}
+tr{
+    color: red;
+}
+
+@media (max-width:768px){
+    #menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.4);
+        backdrop-filter: blur(50px);
+        width: 100%;
+        left: 100%;
+        transition: all 0.6s ease;
+    }
+    .navbar a:hover{
+        background-color: rgba(0,0,0,0.1);
+    }
+    .captionbox img{
+        width: 100%;
+    }
+}

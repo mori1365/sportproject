@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url("./font/IRANSansWeb.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "KalamehWeb_Bold";
+    src: url("./font/KalamehWeb_Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Chavosh";
+    src: url("./font/Chavosh.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Chakad";
+    src: url("./font/Chakad.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Colak";
+    src: url("./font/Colak.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Asiatech";
+    src: url("./font/Asiatech.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Camelia";
+    src: url("./font/Camelia.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Oswald";
+    src: url("./font/Oswald.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
